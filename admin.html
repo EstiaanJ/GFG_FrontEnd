@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deposit and Withdraw Page</title>
+  </head>
+  <body>
+    <h1>Deposit or Withdraw Funds</h1>
+    <form>
+      <label for="acc-name">Account Name:</label>
+      <input type="text" id="acc-name" name="acc-name" required><br><br>
+
+      <label for="amount">Amount:</label>
+      <input type="text" id="amount" name="amount" required><br><br>
+
+      <label for="pass-hash">Password Hash:</label>
+      <input type="password" id="pass-hash" name="pass-hash" required><br><br>
+
+      <input type="button" value="Deposit" onclick="deposit()">
+      <input type="button" value="Withdraw" onclick="withdraw()"><br><br>
+    </form>
+
+    <p id="result"></p>
+
+    <scrip src="deposit-withdraw.js">
+
+    </script>
+  </body>
+</html>

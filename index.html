@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfers Page</title>
+    <style src="index.css">
+     
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>GFG Transfers Page</h1>
+      <form id="transfer-form">
+        <label for="your-acc-name">Your Account Name:</label>
+        <input type="text" id="your-acc-name" name="your-acc-name" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="amount">Amount ℣:</label>
+        <input type="number" id="amount" name="amount" required>
+        <label for="transfer-to-acc-name">Transfer to Account Name:</label>
+        <input type="text" id="transfer-to-acc-name" name="transfer-to-acc-name" required>
+        <button type="submit">Transfer</button>
+      </form>
+    </div>
+    <div id="container2"></div>
+      <form id="help">
+        <h3>Transferring to a player account, or an NPC you've transferred to before:</h3> 
+        <p>
+        Enter the name of the account (the character name) you are transferring to in the "Transfer to Account Name" field. 
+        The name must be exact, including capitalization.
+        If the name entered is wrong the transfer will go through but they won't receive the money.
+        </p>
+        <h3>Transferring to an NPC you've never transferred to:</h3> 
+        <p>
+         Enter the name of the NPC, make sure it's right so that future transfers to that NPC will work.
+        </p>
+      </form>
+    </div>
+
+    <script src="serverposts.js">
+      
+    </script>
+  </body>
+</html>

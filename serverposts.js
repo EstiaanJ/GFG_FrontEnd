@@ -1,7 +1,8 @@
 function transfer() {
-    const accName = document.getElementById("acc-name").value;
+    console.log("was here")
+    const accName = document.getElementById("from-acc-name").value;
     const amount = document.getElementById("amount").value;
-    const passHash = document.getElementById("pass-hash").value;
+    const passHash = document.getElementById("password").value;
     const toAccName = document.getElementById("to-acc-name").value;
 
     const xhr = new XMLHttpRequest();
@@ -13,6 +14,6 @@ function transfer() {
       }
     };
     //xhr.send(`acc-name=${accName}&amount=${amount}&pass-hash=${passHash}`);
-    xhr.semd(`acc-name=${accName}&amount=${amount}&pass-hash=${passHash}&to-acc-name=${toAccName}`);
+    xhr.send(`from-acc-name=${accName}&amount=${amount}&password=${passHash}&to-acc-name=${toAccName}`);
   }
 

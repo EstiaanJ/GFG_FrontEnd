@@ -10,15 +10,19 @@
     <div id="container">
       <h1>GFG Transfers Page</h1>
       <form id="transfer-form">
-        <label for="your-acc-name">Your Account Name:</label>
-        <input type="text" id="your-acc-name" name="your-acc-name" required>
+        <label for="from-acc-name">Your Account Name:</label>
+        <input type="text" id="from-acc-name" name="from-acc-name" required>
+
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
+
         <label for="amount">Amount ℣:</label>
         <input type="number" id="amount" name="amount" required>
-        <label for="transfer-to-acc-name">Transfer to Account Name:</label>
-        <input type="text" id="transfer-to-acc-name" name="transfer-to-acc-name" required>
-        <button type="submit">Transfer</button>
+
+        <label for="to-acc-name">Transfer to Account Name:</label>
+        <input type="text" id="to-acc-name" name="to-acc-name" required>
+
+        <input type="button" value="Transfer" onclick="transfer()">
       </form>
     </div>
     <div id="container2"></div>
@@ -36,8 +40,6 @@
       </form>
     </div>
 
-    <script src="serverposts.js">
-      
-    </script>
+    <script src="serverposts.js"></script>
   </body>
 </html>
